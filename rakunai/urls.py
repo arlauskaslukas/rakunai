@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 from rakunai.views import index as home
+from rakunai.views import css
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home)
+    path('', home),
+    path('/styles.css', css)
 ]
