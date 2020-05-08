@@ -8,6 +8,7 @@
         <!--todo:fix this-->
         {% load static %}
         <link rel="stylesheet" href="{% static 'styles.css' %}" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <title>Index page</title>
         <style>
             .jumbotron{
@@ -20,21 +21,49 @@
                 align-self: flex-end;
                 text-align: end;
             }
+            .space-cad-bg{
+                background: #282F44;
+            }
+            .champagne-bg{
+                background: #F6D8AE;
+            }
+            .linen-text{
+                color: #FFEDDF;
+            }
+            .arylide-bg{
+                background: #B0BEA9;
+            }
+            .skobeloff-bg{
+                background: #297373;
+            }
+            div.headers {
+                font-family: 'Roboto';
+                text-align: center;
+            }
+            img.teamimages{
+                height:auto;
+                width:100%
+            }
+            .rowteams{
+                display:flex;
+                border-top: 2px ridge;
+            }
+            .alignment-col{
+                align-items: center;
+            }
+            .padding-0{
+               padding-right:0;
+               padding-left:0;
+               padding-top: 0;
+            }
         </style>
-        <div class="jumbotron">
+        <div class="jumbotron champagne-bg">
             <div class="container">
                 <div class="row">
                     <div class = "col-xs-12 col-sm-6">
-                        <h1>Rakunai</h1>
+                        <h1 class="">Phototabs</h1>
                         <p>
                         
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class = "col-xs-12 col-sm-6">
-                        <p>
-                            About
                         </p>
                     </div>
                 </div>
@@ -80,14 +109,29 @@
                         <p>
                             The information about our project will be here. Stay tuned!
                         </p>
-                        <img src="https://cdn.pixabay.com/photo/2016/03/31/21/46/racoon-1296640_960_720.png" class="img-fluid" alt="Responsive image"></img>
                     </div>
                 </div>
             </div>
         </div>
     </head>
-    <body>
+    <body class="space-cad-bg padding-0">
         <div class="container">
+            <div class="row">
+            </div>
+            <div class="row rowteams align-tems-center">
+                <div class="col-xs-12 col-sm-6 skobeloff-bg padding-0 linen-text">
+                    <h2>
+                        Simonas Bansevičius
+                    </h2>
+                    <h5>
+                        CEO, leader of the cult
+                    </h5>
+                </div>
+                <div class="col-sm-6 padding-0">
+                    <img class="teamimages" src="https://scontent.fvno5-1.fna.fbcdn.net/v/t1.0-9/38052316_1748243691891527_2892404850287443968_o.jpg?_nc_cat=105&_nc_sid=09cbfe&_nc_ohc=iVsver6RoxUAX_Gcj1e&_nc_ht=scontent.fvno5-1.fna&oh=c1a0511d269afff0c5a188f052cff2f6&oe=5ED96666">
+                </div>
+            </div>
+
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
